@@ -1,3 +1,7 @@
+正则的几点匹配
+字符串里面包含：@javax.validation.constraints.Pattern(regexp = "^((?!http|ZZZZZ).)*$", message = "{valid.format}")
+不能以某串字符串开头：@javax.validation.constraints.Pattern(regexp = "^(?!http://|https://).*$", message = "{valid.format}")
+
 # java-bean-validation-extension (JBVExt)
 
 *JBVE* (Java Bean Validation Extension) is a small utils library that extends the [Java Bean Validation Specification](http://beanvalidation.org) with additional @Annotations. 
